@@ -16,7 +16,7 @@
 title: Code for America Hurricane Response
 email: email@hurricane-response.org
 description: >- # this means to ignore newlines until "baseurl:"
-  No One's Coming - It's Up to Us
+  Homepage for Code for America's Hurricane Response efforts
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.hurricane-response.org" # the base hostname & protocol for your site, e.g. http://example.com
 

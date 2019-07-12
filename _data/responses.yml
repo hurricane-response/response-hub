@@ -1,0 +1,36 @@
+active:
+  -
+    title: Hurricane Barry
+    type: hurricane
+    startdate: July 11, 2019
+    active: true
+    url: https://barry.hurricane-response.org
+    smsbot: 
+inactive:
+  -
+    title: Hurricane Michael
+    type: hurricane
+    date: October 2018
+    active: false
+  -
+    title: Hurricane Florence
+    type: hurricane
+    date: September 2018
+    active: false
+  -
+    title: Hurricane Irma
+    type: hurricane
+    date: September 2017
+    active: false
+  -
+    title: Hurricane Harvey
+    type: hurricane
+    date: August 2017
+    active: false
+drills:
+  -
+    title: FEMA - Shaken Fury
+    type: drill
+    date: June 2019
+    active: false
+

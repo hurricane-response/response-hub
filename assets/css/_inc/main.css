@@ -1,0 +1,28 @@
+@import "variables";
+@import "remedy";
+@import "typography.css";
+@import "grid.css";
+@import "links.css";
+@import "header.css";
+@import "map.css";
+@import "footer.css";
+
+.text-bot {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.text-bot p {
+    padding: .3em;
+}
+
+.map-header {
+    text-align: center;
+}
+
+.page-content .content {
+    width: 95vw;
+    margin: 0 auto;
+}

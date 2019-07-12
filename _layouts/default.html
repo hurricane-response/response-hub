@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+	<body
+		{% if page.layout == "default" %}
+			class="{{page.bodyClass | default: site.bodyClass |default: "page" }}"
+			{% else %}
+			class="{{page.layout}}-content"
+		{% endif %}
+	>
+		<div class="wrapper">
+			{% include header.html %}
+			<main class="content">
+					{{ content }}
+			</main>
+
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

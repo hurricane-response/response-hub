@@ -1,0 +1,9 @@
+main-nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Past Responses
+    url: /past-responses
+  - title: Contact
+    url: /contact

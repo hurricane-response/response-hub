@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+	<body
+		{% if page.layout == "home" %}
+			class="{{ page.bodyClass | default: site.bodyClass | default: "home" }}"
+			{% else %}
+			class="{{page.layout}}-content"
+		{% endif %}
+	>
+		<div class="wrapper">
+			{% include header.html %}
+			
+			<main class="content">
+			<h2>{{ site.title }}</h2>
+            <div class="content-intro">{{ content }}</div>
+			<h2>Active Responses</h2>
+            {% if site.data.responses.active %}
+            <ul class="responses responses-active">
+                {% for response in site.data.responses.active %}
+                <a href="{{ response.url }}"><li class="response">
+                    <h3>{{ response.title }}  <small>(Started {{ response.startdate }})</small></h3>
+                    <p>{{ response.url }}</p>
+                    {% if response.smsbot %}
+                    <p>Text your zipcode to {{ response.smsbot }} for local shelter information.</p>
+                    {% endif %}
+                </li></a>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <div class="content-no-responses">
+            <p>We are not currently active on any disaster responses.</p>
+            <p>Please check again later, or <a href="{% link contact.md %}">contact us</a> if there's a response you expect to see here.</p>
+            </div>
+            {% endif %}
+			</main>
+
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

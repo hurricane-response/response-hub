@@ -59,6 +59,9 @@ p {
 pre { 
   white-space: pre-wrap; /* Overflow by default is bad. */
 }
+code, pre {
+  font-family: 'Roboto Mono', 'Monaco', 'Lucida Console', monospace; 
+}
 /* are browsers now consistent with margin & padding on lists?
   See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
 nav ul {
@@ -207,18 +210,23 @@ body {
 a {
     outline: none;
     padding: 2px 1px 0;
+    text-decoration: underline;
+}
+.mainnav a {
     text-decoration: none;
 }
 a:link {
-    color: #004b6a;
-    color: var(--blue);
+    /* color: #004b6a; */
+    color: #399fd3;
+    color: var(--cfablue);
 }
 .mainnav a:link {
     color: white;
 }
 a:visited { 
-    color: #444444; 
-    color: var(--grey-dark);
+    /* color: #444444; */
+    color: #004b6a;
+    color: var(--blue);
 }
 .mainnav a:visited {
     color: #e5e5e5;
@@ -475,9 +483,12 @@ a:active {
     text-decoration: none;
 }
 .responses-active .response {
-    border: 1px var(--grey-dark) solid;
     background-color: var(--grey-light);
+    border: 1px var(--grey-dark) solid;
     border-radius: 10px;
+    box-shadow: inset 0 0 5px var(--grey-dark);
+    touch-action: manipulation;
+    cursor: pointer;
     color: var(--red);
     font-size: 2rem;
     margin-right: 0;

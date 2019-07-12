@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+	<body
+		{% if page.layout == "home" %}
+			class="{{ page.bodyClass | default: site.bodyClass | default: "home" }}"
+			{% else %}
+			class="{{page.layout}}-content"
+		{% endif %}
+	>
+		<div class="wrapper">
+			{% include header.html %}
+			
+			<main class="content">
+			<h2>{{ site.title }}</h2>
+            <div class="content-intro">{{ content }}</div>
+			<h2>Active Responses</h2>
+            <ul class="responses responses-active">
+                {% for response in site.data.responses.active %}
+                <a href="{{ response.url }}"><li class="response">
+                    <h3>{{ response.title }}  <small>(Started {{ response.startdate }})</small></h3>
+                    <p>{{ response.url }}</p>
+                    {% if response.smsbot %}
+                    <p>Text your zipcode to {{ response.smsbot }} for local shelter information.</p>
+                    {% endif %}
+                </li></a>
+                {% endfor %}
+            </ul>
+
+			<h2>Past Responses</h2>
+            <ul class="responses responses-inactive">
+                {% for response in site.data.responses.inactive %}
+                <li class="response">{{ response.title }}<br/><small>({{ response.date }})</small></li>
+                {% endfor %}
+            </ul>
+			<h2>Response Drills</h2>
+            <ul class="responses responses-drills">
+                {% for response in site.data.responses.drills %}
+                <li class="response">{{ response.title }}<br/><small>({{ response.date }})</small></li>
+                {% endfor %}
+            </ul>
+			</main>
+
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

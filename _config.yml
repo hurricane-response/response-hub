@@ -1,0 +1,36 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Code for America Hurricane Response
+email: email@hurricane-response.org
+description: >- # this means to ignore newlines until "baseurl:"
+  No One's Coming - It's Up to Us
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.hurricane-response.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+# URL to the page to volunteer
+help_url: "https://www.codeforamerica.org"
+
+logo: "https://avatars0.githubusercontent.com/u/43193416?s=400&u=8e1d97c94fa7a9611c8b8fa765e68c8fe86e2e7c"
+
+# Site settings
+# GA site tag
+gtag: UA-125718262-3
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

@@ -1,0 +1,44 @@
+
+.colophon {
+    text-align: center;
+    background-color: var(--grey-light);
+    color: var(--dark);
+    min-height: 5em;
+    font-size: 1.3em;
+    padding-top: 1em;
+}
+
+.colophon h3 {
+    font-size: 2rem;
+}
+
+.colophon p:first-of-type {
+    padding-top: 1em;
+    margin: 0 3em 1em;
+    
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em;
+}
+
+
+
+.column img {
+    margin: auto;
+}
+
+@media (min-width: 900px) {
+    .columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 42%;
+        padding: 0 1em;
+    }
+}

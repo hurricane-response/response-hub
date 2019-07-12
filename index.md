@@ -2,8 +2,11 @@
 layout: home
 ---
 
-Code for America Brigade members from across the United States of America help respond to hurricanes and other disasters by collecting and providing shelter and distribution point information.
-
 Click on any active response below to be taken to that response site.
 
-To join us and help out, see information on volunteering at the bottom of this page!
+Our response sites provide information emergency response resources available to people affected by the disaster, including
+
+* shelters in the affected area
+* distribution points for water and food
+
+If you'd like to help out with this effort, information on volunteering is at the bottom of this page.

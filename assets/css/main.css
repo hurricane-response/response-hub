@@ -220,6 +220,10 @@ a:visited {
     color: #444444; 
     color: var(--grey-dark);
 }
+.mainnav a:visited {
+    color: #e5e5e5;
+    color: var(--grey-light);
+}
 a:focus {
     border-bottom: 1px solid #004b6a;
     border-bottom: 1px solid var(--blue);
@@ -444,6 +448,14 @@ a:active {
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
+}
+.content .content-no-responses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .responses {
     list-style: none;

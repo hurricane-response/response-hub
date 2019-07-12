@@ -17,6 +17,7 @@
 			<h2>{{ site.title }}</h2>
             <div class="content-intro">{{ content }}</div>
 			<h2>Active Responses</h2>
+            {% if site.data.responses.active %}
             <ul class="responses responses-active">
                 {% for response in site.data.responses.active %}
                 <a href="{{ response.url }}"><li class="response">
@@ -28,6 +29,12 @@
                 </li></a>
                 {% endfor %}
             </ul>
+            {% else %}
+            <div class="content-no-responses">
+            <p>We are not currently active on any disaster responses.</p>
+            <p>Please check again later, or <a href="{% link contact.md %}">contact us</a> if there's a response you expect to see here.</p>
+            </div>
+            {% endif %}
 			</main>
 
 			{% include footer.html %}

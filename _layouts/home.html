@@ -16,8 +16,8 @@
 			<main class="content">
 			<h2>{{ site.title }}</h2>
             <div class="content-intro">{{ content }}</div>
-			<h2>Active Responses</h2>
             {% if site.data.responses.active %}
+			<h2>Active Responses</h2>
             <ul class="responses responses-active">
                 {% for response in site.data.responses.active %}
                 <a href="{{ response.url }}"><li class="response">

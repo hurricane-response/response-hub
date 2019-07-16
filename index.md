@@ -2,11 +2,23 @@
 layout: home
 ---
 
-Click on any active response below to be taken to that response site.
+{% if site.data.responses.active %}
+{% assign num_responses = site.data.responses.active | size %}
+{% if num_responses > 1 %}
+Click on an active response below to be taken to that response site.
 
-Our response sites provide information emergency response resources available to people affected by the disaster, including
+Each site can tell you about ways to get help in a disaster emergency, like a hurricane or flood. They can tell you:
 
-* shelters in the affected area
-* distribution points for water and food
+* Where shelters are
+* Where to get food and water
+{% else %}
+Click on the active response below to be taken to that response site.
 
-If you'd like to help out with this effort, information on volunteering is at the bottom of this page.
+It can tell you about ways to get help in a disaster emergency, like a hurricane or flood:
+
+* Where shelters are
+* Where to get food and water
+{% endif %}
+
+If you'd like to help out, you can [learn more about volunteering here]({% link about.md %}).
+{% endif %}

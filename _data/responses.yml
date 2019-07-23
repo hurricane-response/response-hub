@@ -5,7 +5,8 @@ inactive:
     title: Hurricane Barry
     type: hurricane
     startdate: July 11, 2019
-    active: true
+    date: July 2019
+    active: false
     url: https://barry.hurricane-response.org
     smsbot: 
   -

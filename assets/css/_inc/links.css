@@ -1,4 +1,4 @@
-a {
+.mainnav a {
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
@@ -6,19 +6,20 @@ a {
 
 
 a:link {
-    color: var(--blue);
+    color: var(--cfablue);
 }
 
-.mainnav a:link {
-    color: white;
+.mainnav a:link,
+.mainnav a:visited {
+    color: var(--grey-light);
 }
 
 a:visited { 
-    color: var(--grey-dark);
+    color: var(--blue);
 }
 
 a:focus {
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 1px solid var(--cfablue);
 }
 
 .mainnav a:focus {
@@ -27,17 +28,17 @@ a:focus {
 
 a:hover {
     border-bottom: 1px solid;
-  }
+}
 
 .mainnav a:hover {
     border-bottom: 1px solid var(--red);
     color: var(--red);
     background: white;
-  }
+}
   
-  a:active {
+a:active {
     color: var(--highlight);
-  }
+}
 
 .text-bot a:link {
     color: var(--grey-light);

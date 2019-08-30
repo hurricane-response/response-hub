@@ -22,7 +22,69 @@
     text-align: center;
 }
 
-.page-content .content {
+.content {
     width: 95vw;
     margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 1;
+    text-align: center;
+}
+
+.content .content-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.responses {
+    list-style: none;
+    padding-left: 0;
+}
+.responses .response {
+    padding: 0.5em;
+    border: 1px var(--grey-light) solid;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.responses .response:last-child {
+    margin-right: 0;
+}
+.responses > a {
+    text-decoration: none;
+}
+.responses-active .response {
+    background-color: var(--grey-light);
+    border: 1px var(--grey-dark) solid;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px var(--grey-dark);
+    touch-action: manipulation;
+    cursor: pointer;
+    color: var(--red);
+    font-size: 2rem;
+    margin-right: 0;
+}
+.responses-active .response h3 {
+    font-size: 2rem;
+}
+.responses-inactive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.responses-drills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }

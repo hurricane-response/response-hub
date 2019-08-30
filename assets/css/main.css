@@ -50,7 +50,6 @@ h6 {
 }
 h2, h3, h4, h5, h6{
   line-height: 1;
-  text-align: center;
 }
 /* Improve readibility */
 p {
@@ -58,9 +57,6 @@ p {
 }
 pre { 
   white-space: pre-wrap; /* Overflow by default is bad. */
-}
-code, pre {
-  font-family: 'Roboto Mono', 'Monaco', 'Lucida Console', monospace; 
 }
 /* are browsers now consistent with margin & padding on lists?
   See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation  */
@@ -207,51 +203,44 @@ body {
 
 
 }
-a {
+.mainnav a {
     outline: none;
     padding: 2px 1px 0;
-    text-decoration: underline;
-}
-.mainnav a {
     text-decoration: none;
 }
 a:link {
-    /* color: #004b6a; */
     color: #399fd3;
     color: var(--cfablue);
 }
-.mainnav a:link {
-    color: white;
-}
-a:visited { 
-    /* color: #444444; */
-    color: #004b6a;
-    color: var(--blue);
-}
+.mainnav a:link,
 .mainnav a:visited {
     color: #e5e5e5;
     color: var(--grey-light);
 }
+a:visited { 
+    color: #004b6a; 
+    color: var(--blue);
+}
 a:focus {
-    border-bottom: 1px solid #004b6a;
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 1px solid #399fd3;
+    border-bottom: 1px solid var(--cfablue);
 }
 .mainnav a:focus {
     border-bottom: 1px solid white;
 }
 a:hover {
     border-bottom: 1px solid;
-  }
+}
 .mainnav a:hover {
     border-bottom: 1px solid #cf1b41;
     border-bottom: 1px solid var(--red);
     background: white;
     color: #cf1b41;
     color: var(--red);
-  }
+}
 a:active {
     color: var(--highlight);
-  }
+}
 .text-bot a:link {
     color: #e5e5e5;
     color: var(--grey-light);
@@ -445,35 +434,36 @@ a:active {
 .text-bot p {
     padding: .3em;
 }
+.map-header {
+    text-align: center;
+}
 .content {
     margin: 0 auto;
     width: 95vw;
+}
+h2, h3, h4, h5, h6 {
+    line-height: 1;
+    text-align: center;
 }
 .content .content-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.content .content-no-responses {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 .responses {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
 }
 .responses .response {
-    padding: 0.5em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px #e5e5e5 solid;
     border: 1px var(--grey-light) solid;
     border-radius: 5px;
-    margin-right: 10px;
+    padding: 0.5em;
     text-align: center;
 }
 .responses .response:last-child {
@@ -483,15 +473,19 @@ a:active {
     text-decoration: none;
 }
 .responses-active .response {
-    background-color: var(--grey-light);
+    cursor: pointer;
+    margin-right: 0;
+    box-shadow: inset 0 0 5px #444444;
+    box-shadow: inset 0 0 5px var(--grey-dark);
+    border: 1px #444444 solid;
     border: 1px var(--grey-dark) solid;
     border-radius: 10px;
-    box-shadow: inset 0 0 5px var(--grey-dark);
+    background-color: #e5e5e5;
+    background-color: var(--grey-light);
     touch-action: manipulation;
-    cursor: pointer;
+    color: #cf1b41;
     color: var(--red);
     font-size: 2rem;
-    margin-right: 0;
 }
 .responses-active .response h3 {
     font-size: 2rem;
@@ -499,14 +493,17 @@ a:active {
 .responses-inactive {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+
 }
 .responses-drills {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

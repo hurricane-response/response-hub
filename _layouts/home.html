@@ -20,13 +20,13 @@
 			<h2>Active Responses</h2>
             <ul class="responses responses-active">
                 {% for response in site.data.responses.active %}
-                <a href="{{ response.url }}"><li class="response">
+                <li class="response"><a href="{{ response.url }}">
                     <h3>{{ response.title }}  <small>(Started {{ response.startdate }})</small></h3>
                     <p>{{ response.url }}</p>
                     {% if response.smsbot %}
                     <p>Text your zipcode to {{ response.smsbot }} for local shelter information.</p>
                     {% endif %}
-                </li></a>
+                </a></li>
                 {% endfor %}
             </ul>
             {% else %}

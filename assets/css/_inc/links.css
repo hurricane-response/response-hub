@@ -6,7 +6,7 @@
 
 
 a:link {
-    color: var(--cfablue);
+    color: var(--blue);
 }
 
 .mainnav a:link,
@@ -19,7 +19,7 @@ a:visited {
 }
 
 a:focus {
-    border-bottom: 1px solid var(--cfablue);
+    border-bottom: 1px solid var(--red);
 }
 
 .mainnav a:focus {

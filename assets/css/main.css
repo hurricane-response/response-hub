@@ -2,7 +2,7 @@
     --dark: #232323;
     --grey-dark: #444444;
     --grey: #6D6E71;
-    --grey-light: #e5e5e5;
+    --grey-light: #ebebeb;
     --orange: #e87d2b;
     --yellow: #fedd44;
     --green: #00a175;
@@ -209,12 +209,12 @@ body {
     text-decoration: none;
 }
 a:link {
-    color: #399fd3;
-    color: var(--cfablue);
+    color: #004b6a;
+    color: var(--blue);
 }
 .mainnav a:link,
 .mainnav a:visited {
-    color: #e5e5e5;
+    color: #ebebeb;
     color: var(--grey-light);
 }
 a:visited { 
@@ -222,8 +222,8 @@ a:visited {
     color: var(--blue);
 }
 a:focus {
-    border-bottom: 1px solid #399fd3;
-    border-bottom: 1px solid var(--cfablue);
+    border-bottom: 1px solid #cf1b41;
+    border-bottom: 1px solid var(--red);
 }
 .mainnav a:focus {
     border-bottom: 1px solid white;
@@ -242,7 +242,7 @@ a:active {
     color: var(--highlight);
 }
 .text-bot a:link {
-    color: #e5e5e5;
+    color: #ebebeb;
     color: var(--grey-light);
     font-size: 1.3em;
 }
@@ -387,7 +387,7 @@ a:active {
   }
 .mapboxgl-ctrl-geocoder { min-width:100%; }
 .colophon {
-    background-color: #e5e5e5;
+    background-color: #ebebeb;
     background-color: var(--grey-light);
     padding-top: 1em;
     min-height: 5em;
@@ -460,7 +460,7 @@ h2, h3, h4, h5, h6 {
 .responses .response {
     margin-right: 10px;
     margin-bottom: 10px;
-    border: 1px #e5e5e5 solid;
+    border: 1px #ebebeb solid;
     border: 1px var(--grey-light) solid;
     border-radius: 5px;
     padding: 0.5em;
@@ -480,7 +480,7 @@ h2, h3, h4, h5, h6 {
     border: 1px #444444 solid;
     border: 1px var(--grey-dark) solid;
     border-radius: 10px;
-    background-color: #e5e5e5;
+    background-color: #ebebeb;
     background-color: var(--grey-light);
     touch-action: manipulation;
     color: #cf1b41;

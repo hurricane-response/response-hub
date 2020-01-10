@@ -1,11 +1,19 @@
 active:
+  -
+    title: Puerto Rico Earthquake
+    type: earthquake
+    startdate: January 8, 2020
+    date: January 2020
+    active: true
+    url: https://pr-quake.hurricane-response.org
+    smsbot: 1 (504) 226-6938
 inactive:
   -
     title: Hurricane Dorian
     type: hurricane
     startdate: August 28, 2019
     date: August/September 2019
-    active: true
+    active: false
     url: https://dorian.hurricane-response.org
     smsbot: 44663 (4-GOOD)
   -
